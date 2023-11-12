@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="448.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.example.demo.SignInController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="189.0" style="-fx-background-color: #4f0184;">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="173.0" layoutX="8.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="287.0" prefWidth="173.0" text=" ( 555 ) - 555 55 55" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="127.0" prefHeight="122.0" prefWidth="173.0" text="support@upod.dev" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="295.0" prefWidth="196.0">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="173.0" layoutX="71.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="125.0" prefHeight="46.0" prefWidth="173.0" text="username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="161.0" prefHeight="46.0" prefWidth="173.0" text="password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_username" layoutX="108.0" layoutY="136.0" prefHeight="25.0" prefWidth="134.0" />
+            <TextField fx:id="tf_password" layoutX="108.0" layoutY="172.0" prefHeight="25.0" prefWidth="134.0" />
+            <Button fx:id="button_login" layoutX="108.0" layoutY="219.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: #4f0184; -fx-cursor: hand;" styleClass="curso" text="login" textFill="WHITE" />
+            <Label layoutX="67.0" layoutY="254.0" text="not a user">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_sign_up" layoutX="142.0" layoutY="250.0" mnemonicParsing="false" style="-fx-background-color: transparetnt;" text="sign up" textFill="#272e8d" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
